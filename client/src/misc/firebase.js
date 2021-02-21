@@ -3,9 +3,10 @@ import firebase from 'firebase/app';//This line is a must, to use firebase as gi
 import 'firebase/storage';//From this point we should import the perticular services we want to use
 
 //firebase - Becasue had the blaze plan already, so scalabilty - if needed, will not be a problem as won't have to pay a fixed amount every month (like in cloudinary). It will automatically charge as per the app usge. And even cheaper than cloudniary 
+import {FIREBASE_CONFIG} from '../config.js'
 
   // Initialize Firebase
-  firebase.initializeApp(process.env.REACT_APP_FIREBASE_CONFIG);
+  firebase.initializeApp(FIREBASE_CONFIG);
 
   const storage = firebase.storage();
 
