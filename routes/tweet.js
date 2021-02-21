@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 const tweetContoller = require('../controllers/tweet');
-const isAuth = require('../RBACmiddleware.js');
+const isAuth = require('../RBACMiddleware.js');
 
 //API related to fetching all the tweets in our app in paginated way - for home page
 router.get("/api/getAllTweets", tweetContoller.getAllTweets);
