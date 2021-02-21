@@ -1,0 +1,24 @@
+{
+  "name": "socail_media",
+  "version": "1.0.0",
+  "description": "Addskill Hackthon 2",
+  "main": "app.js",
+  "engine": {
+    "node": "14.15.1",
+    "npm": "6.14.9"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Nikhil Choudhary",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.3"
+  },
+  "license": "ISC"
+}
