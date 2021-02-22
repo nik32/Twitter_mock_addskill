@@ -57,7 +57,6 @@ const Navbar = (props) => {
                     <a href="#" data-target="mobile-demo" className="sidenav-trigger right"><i className="material-icons">menu</i></a>
                     <ul className="right hide-on-med-and-down">
                         {
-                            console.log(active_route),
                             routes.map((route, indx) => (
                                 <li key={indx} className={active_route.pathname === route.url ? active : null}>
                                     <Link to={route.url}>
