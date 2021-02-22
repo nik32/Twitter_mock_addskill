@@ -38,7 +38,7 @@ const handleUpload = (e, img, setURLCallback, setImgCallback) => {
     disableButtons(true);
 
     const uploadTask = storage.ref(`/images/${img.name}`).put(img);
-    uploadTask.on("state_changed", console.log, (err) => errorCallback(err, setImgCallback), 
+    uploadTask.on("state_changed", null/*console.log*/, (err) => errorCallback(err, setImgCallback), 
     () => {
         storage
             .ref(`/images/${img.name}`)

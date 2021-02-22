@@ -5,7 +5,6 @@ import 'firebase/storage';//From this point we should import the perticular serv
 //firebase - Becasue had the blaze plan already, so scalabilty - if needed, will not be a problem as won't have to pay a fixed amount every month (like in cloudinary). It will automatically charge as per the app usge. And even cheaper than cloudniary 
 import {FIREBASE_CONFIG} from '../config.js'
 
-console.log(FIREBASE_CONFIG);
   // Initialize Firebase
   firebase.initializeApp(FIREBASE_CONFIG);
 
