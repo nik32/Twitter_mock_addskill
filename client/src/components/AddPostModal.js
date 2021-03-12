@@ -85,7 +85,7 @@ class AddPostModal extends Component {
 
           <form className="row" onSubmit={(e) => handleUpload(e, this.state.tweet_pic, (tweet_pic_url) => this.setState({tweet_pic_url}), () => this.setState({tweet_pic: null}))}>
             <input className="col s9" type="file" id="file" onChange={(e) => this.setState({tweet_pic: e.target.files[0]})} style={{overflow: 'hidden', padding: "0"}} />
-            <button className="btn waves-effect waves-light col s3" style={{float:"right"}}>Upload</button>
+            <button className="btn-flat waves-effect waves-teal col s3" style={{float:"right", fontFamily: "Raleway, sans-serif", letterSpacing: "1px"}}>Upload</button>
           </form>
 
           <div id="tweet-pic">
@@ -95,10 +95,10 @@ class AddPostModal extends Component {
         </div>
 
         <div className="modal-footer" style={{paddingRight: "7%", paddingBottom: "12%"}}>
-          <a className="modal-close waves-effect waves-red btn-flat">
+          <a className="btn-flat waves-effect waves-red modal-close">
             Cancel
           </a>
-          <a className="waves-effect waves-green btn-flat" onClick={() => this.addPost(document.getElementById("tweet")) }>
+          <a className="btn-flat waves-effect waves-green" onClick={() => this.addPost(document.getElementById("tweet")) }>
             Post
           </a>
         </div>

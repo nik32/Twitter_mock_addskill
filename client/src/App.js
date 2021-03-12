@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Redirect, useHistory} from 'react-router-dom';
+import {BrowserRouter, Route, Redirect} from 'react-router-dom';
 import {useState} from 'react';
 
 import './App.css';
